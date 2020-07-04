@@ -2,7 +2,7 @@ baseURL: http://exmaple.org/                      # Hosting location.
 languageCode: en-us                           # Locale
 title: Acme Corporation                       # Name of the website
 theme: Eclectic                               # Name of the theme
-publishDir: docs                              # Output folder
+publishDir: public                              # Output folder
 author:                                       # Information about the website author
   facebook: "https://facebook.com/example"
   twitter: "https://twitter.com/example"
