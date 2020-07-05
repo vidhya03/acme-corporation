@@ -1,7 +1,7 @@
 baseURL: http://exmaple.org/                  # Hosting location.
 languageCode: en-us                           # Locale
 title: Acme Corporation                       # Name of the website
-theme: Universal                              # Name of the theme
+theme: Eclectic                              # Name of the theme
 publishDir: public                            # Output folder
 author:                                       # Information about the website author
   facebook: "https://facebook.com/example"
@@ -39,3 +39,10 @@ params:                                       # Theme specific parameters
   about_us: Acme Corporation is world's leading manufacturer of digital shapes. From squares and circles to triangles and hexagons, we have it all. Browse through our collection of various forms with different thickness and line styles. We shape the world. You live in it.
   recent_posts:
     enable: true
+markup:                                 # Settings for markup
+  goldmark:                             # The default Hugo Markdown engine
+    renderer:                           # Settings for markdown rendering
+      unsafe: true                      # Enable 'unsafe' inline HTML
+  highlight:                            # Options for code highlighting
+    lineNos: true                       # Enable line numbers
+enableEmoji: true                       # Enable emoticons
