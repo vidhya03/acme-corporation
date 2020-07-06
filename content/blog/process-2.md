@@ -3,6 +3,7 @@ title: Our Manufacturing Process Part II
 date: "2019-01-02T00:00:00Z"
 tags: [manufacturing]
 categories: [square, manufacturing]
+series: [manufacturing]
 ---
 
 
