@@ -5,12 +5,9 @@ description: World's leading manufacturer of digital shapes. We shape the world.
 draft: false
 ---
 
-About Us
-========
+Acme Corporation&trade; is the world's leading manufacturer of digital shapes. From squares and circles to triangles and hexagons, we have it all. Browse through our collection of various forms with different thickness and line styles. 
 
-Acme Corporation&trade; is the world's leading manufacturer of digital shapes. From squares and circles to triangles and hexagons, we have it all. Browse through our collection of various forms with different thickness and line styles.
-
-> We shape the world. You live in it.
+> We shape the world. You live in it. 
 
 We provide :smile: to hundreds of happy customers.
 
@@ -19,7 +16,7 @@ Manufacturing
 
 At Acme Corporation, we take pride in what we create. Our manufacturing process goes through **3 different** stages of fine workmanship to give you the best possible shapes.
 
-<img style="float:right; margin: 20px;" src="/image/draw.jpg">
+<img style="float:right; margin: 20px;" src="draw.jpg">
 
 1. **Drawing** Our shapes are drawn with precision to the 1/100 of a millimeter.
    * We use advanced vector drawing tools to create our catalog.
@@ -50,7 +47,7 @@ Team
 
 Alex
 : Hippy Web Developer
-: Technofile
+: Technophile
 
 Bob
 : Classic SysAdmin
