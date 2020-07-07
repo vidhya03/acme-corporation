@@ -11,13 +11,31 @@
         <img src="./image/logo.svg" width="60px">
         {{with $title}}<h1 class="intro">{{.}}</h1>{{end}}
         {{with .Param "subtitle"}}<h2>{{. | humanize | markdownify}}</h2>{{end}}
-        <a href="./about">About Us</a>
-        <a href="./privacy">Privacy Policy</a>
-        <a href="./terms">Terms of Use</a>
-        <a href="./contact">Contact Us</a>
+        {{.Content}}
+        {{ range $.Site.Menus.main }}
+        <a href="{{.URL}}">{{.Name | humanize}}</a>
+        {{end}}
       </main>
     </section>
+    <section>
+      {{/* Recent Blog Posts */}}
+      <article>
+        <h1> Recent Blog Posts</h1>
+        <div class="posts">
+          {{ range first 3 (where (where $.Site.RegularPages ".Section" "blog" ) ".Draft" false)}}
+          <div class="post">
+            <a href="{{.Permalink}}">{{default (.File.ContentBaseName | humanize | title) .Title}}</a>
+            <summary>{{.Summary}}</summary>
+          </div>
+          {{end}}
+        </div>
+      </article>
+    </section>
     <footer>
+      {{ range $.Site.Menus.footer }}
+      <a href="{{.URL}}">{{.Name | humanize}}</a>
+      {{ end }}
+      <br>
       {{.Param "copyright" | markdownify}}
     </footer>
   </body>
