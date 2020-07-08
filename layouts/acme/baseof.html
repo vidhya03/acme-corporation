@@ -1,0 +1,36 @@
+<html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/index.css">
+  {{with (default .Site.Title .Page.Title)}}<title>{{.}}</title>{{end}}
+  {{with .Page.Description}}
+  <meta name="description" content="{{.}}" />{{end}}
+</head>
+
+<body class="{{block "bodyClass" .}}page{{end}}">
+  {{block "body" .}}
+    <section>
+      <main>
+        {{with .Page.Title}}<h1>{{.}}</h1>{{end}}
+        {{.Content}}
+      </main>
+    </section>
+  {{end}}
+  {{block "footer" .}}
+  <footer>
+    <nav>
+      <ul>
+        {{ range $.Site.Menus.footer }}
+        <li><a href="{{.URL}}">{{.Name | humanize}}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+    <br>
+    {{.Param "copyright" | markdownify}}
+  </footer>
+  {{ end }}
+</body>
+
+</html>
