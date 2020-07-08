@@ -2,7 +2,16 @@
 <nav>
   <ul>
     {{ range $ }}
-    <li><a href="{{.URL}}">{{.Name | humanize}}</a></li>
+    <li>
+      <a href="{{.URL}}">{{.Name | humanize}}</a>
+      {{if .HasChildren}}
+      <ul>
+        {{ range .Children }}
+        <li><a href="{{.URL}}">{{.Name | humanize}}</a></li>
+        {{ end }}
+      </ul>
+      {{end}}
+    </li>
     {{end}}
   </ul>
 </nav>
