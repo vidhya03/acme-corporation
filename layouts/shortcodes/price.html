@@ -1,9 +1,9 @@
-{{$product := default (.Get 0) (.Get "product")}}
+{{$product := default (.Get 0) (.Get "product") | lower}}
 {{if $product}}
   {{$products := resources.GetMatch "products.csv"}}
   {{$parsedProducts := $products | transform.Unmarshal (dict "delimiter" ",")}}
-  {{ range $r := $parsedProducts }}
-    {{if eq (index $r 0) $product}}
+  {{ range $r := $parsedProducts }}      
+    {{if eq (index $r 0 | lower) $product}}
       {{index $r 2}}
     {{end}}
   {{ end }}
