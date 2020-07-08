@@ -10,6 +10,12 @@
 </head>
 
 <body class="{{block "bodyClass" .}}page{{end}}">
+  {{block "header" .}}
+  <header>
+    <a href="/"><img src="/image/logo.svg" width="60px"></a>
+    {{ partial "menu.html" $.Site.Menus.main }}
+  </header>
+  {{ end }}  
   {{block "body" .}}
     <section>
       <main>

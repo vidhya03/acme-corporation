@@ -1,0 +1,8 @@
+{{/* layouts/partials/menu.html */}}
+<nav>
+  <ul>
+    {{ range $ }}
+    <li><a href="{{.URL}}">{{.Name | humanize}}</a></li>
+    {{end}}
+  </ul>
+</nav>
