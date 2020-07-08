@@ -15,7 +15,7 @@
     <a href="/"><img src="/image/logo.svg" width="60px"></a>
     {{ partial "menu.html" $.Site.Menus.main }}
   </header>
-  {{ end }}  
+  {{ end }}
   {{block "body" .}}
     <section>
       <main>
@@ -26,13 +26,7 @@
   {{end}}
   {{block "footer" .}}
   <footer>
-    <nav>
-      <ul>
-        {{ range $.Site.Menus.footer }}
-        <li><a href="{{.URL}}">{{.Name | humanize}}</a></li>
-        {{ end }}
-      </ul>
-    </nav>
+    {{ partial "menu.html" $.Site.Menus.footer }}
     <br>
     {{.Param "copyright" | markdownify}}
   </footer>
