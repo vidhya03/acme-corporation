@@ -3,7 +3,7 @@
   "short_name": "Acme Corporation",
   "start_url": "/",
   "scope": "/",
-  "theme_color": "#71B180",
-  "background_color": "#71B180",
+  "theme_color": "#C92745",
+  "background_color": "#C92745",
   "display": "standalone"
 }
