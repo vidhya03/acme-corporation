@@ -2,3 +2,4 @@ node_modules
 /serve/
 docs/
 /public/
+resources/_gen/
