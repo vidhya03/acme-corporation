@@ -1,4 +1,8 @@
 ---
+cascade:
+  layout: blog
+  type: acme
+layout: list
 menu:
   main:
     name: Blog

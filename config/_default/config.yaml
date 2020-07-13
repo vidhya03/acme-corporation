@@ -5,3 +5,4 @@ theme: Eclectic                               # Name of the theme
 publishDir: public                            # Output folder
 enableEmoji: true                             # Enable Emoticons
 
+Paginate: 3 # Number of posts that should be shown in a page using the `.Paginator` object
