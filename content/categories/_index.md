@@ -1,5 +1,7 @@
 ---
 title: Categories
+cascade:
+  type: acme
 menu:
   footer:
     weight: 3
