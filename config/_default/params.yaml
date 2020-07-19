@@ -1,3 +1,9 @@
 color: "#C92745"
 color: "#71B180"
 copyright: "Copyright &copy; 2021 Acme Corporation. All Rights Reserved."
+TermsAndPrivacy:
+  company_name: Acme Corporation
+  contact_email: contact@exmaple.org
+  website: https://hugoinaction.com
+  contact_dpo_email: dpo@hugoinaction.com
+  contact_dpo_phone: 9999999999
