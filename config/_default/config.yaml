@@ -3,7 +3,8 @@ languageCode: en-us                           # Locale
 title: Acme Corporation                       # Name of the website
 # theme: Eclectic                               # Name of the theme
 # theme: acme                                   # Name of the theme
-theme: github.com/hugoinaction/Eclectic
+# theme: github.com/hugoinaction/Eclectic
+theme: github.com/hugoinaction/Acme
 publishDir: public                            # Output folder
 enableEmoji: true                             # Enable Emoticons
 
